@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+<head>
+	<title>검은 고양이</title>
+	<style type="text/css">
+		html{font-family: 'Noto Sans KR', sans-serif;}
+		body,header,footer,h2,h1,p{margin: 0; 
+									padding: 0;
+									color: white;}
+		body{background-color: black;}	
+		h2,h1,p{line-height: 1.5;
+				position: absolute;}
+		p{word-spacing: -2px;
+				letter-spacing: -1px;}	
+		.wrap{width: 800px;
+				height: 500px;
+				margin: auto; 
+				position: relative;}
+		#monitor{position: fixed; 
+					background-color: black; 
+					top: 0; 
+					right: 0; 
+					width: 70px;
+					height: 70px; 
+					padding: 5px; 
+					color: white;}
+		header .wrap{width: 80%; 
+						height: 380px;}
+		header .wrap{background-image: url(header2.png); 
+						background-size: 120%;
+						background-position: -100px 700px;
+						background-color: white;}
+		h1{font-size: 50px;
+				text-align: center;
+				top: 200px;
+				left: 300px;
+				color: black;
+				font-family: 'Lobster', cursive;}
+		h2{text-align: center;}
+		img{position: absolute;}
+		p{font-size: 20px; 
+			color: gray;}
+		header h2{text-align: center; 
+					top: 300px;
+					left: 400px;
+					font-family: 'Lobster', cursive;}
+		.yellow {color: yellow;}
+		.s1{height: 1100px;}
+		.s1 p {width: 350px; 
+					right: 0px;
+					top: 0px; opacity: 0;}
+		.s1 .te4 {font-size: 60px;
+					width: 1000px;
+					color: yellow;
+					font-weight: bold;
+					left: -350px;
+					top: 250px;
+					font-family: 'Lobster', cursive;}
+
+		.s1 .te5 {font-size: 12px;
+					width: 300px; 
+					top: 350px; 
+					right: 88px;
+					color: yellow;}
+		.s1 img{width: 750px;
+				height: 315px;
+				position: absolute;
+				left:calc(10% - 450px);
+				top: 40px;
+				opacity: 0;}
+		.bold {color: white;}
+		
+		.s2 .wrap{height: 250px;}
+		.s2 .te6{font-size: 40px; 
+				right: 230px;
+				top: 50px;}
+		.s2 img{width: 50px;
+				top: 50px;
+				right: 150px;}
+		
+		.s3{height: 800px;}
+		.s3 .te7{left: 0px;}
+		.s3 p {width: 410px; 
+				right: 30px;
+				top: 150px;}
+		.s3 img{height: 500px; 
+				top: 120px;
+				left: 80px;}
+
+		.number{font-size: 80px; 
+				top: -28px; 
+				left: -60px;}
+
+		.s4{height: 800px;}
+		.s4 .te8{left: 0px;}
+		.s4 p {width: 450px; 
+				right: -10px;
+				top: 150px;}
+		.s4 img{height: 350px; 
+				width: 350px;
+				top: 150px;
+				left: 10px;}
+
+		.s5{height: 700px;}
+		.s5 .te9{left: 0px;}
+		.s5 p {width: 450px; 
+				right: -10px;
+				top: 150px;}
+		.s5 img{width: 700px;
+				top: 200px;
+				left: -60px;}
+
+		footer .wrap {height: 200px;}
+		footer p {top: 150px; right: -10px;}
+		#next{opacity: 0.8; 
+			width: 100px;
+			height: 100px;
+			top: 800px;
+			left: 900px;}
+		#second {left: 400px;
+				top:0px; 
+				position: absolute;}
+		#se2,#se3,#se4,#se5{opacity: 0;}
+
+
+
+
+
+
+
+		@keyframes wid{
+			from{width: 780px;}
+			to{width: 1500px; 
+				height:656px; 
+				top: 300px; 
+				opacity: 1;}
+			}
+		@keyframes t1{
+			from{width: 780px;}
+			to{width: 1500px; 
+				height:656px; 
+				top: 300px; 
+				opacity: 1;}
+			}
+		@keyframes t3{
+			from{opacity: 0}
+			to{opacity: 1;}
+			}
+		@keyframes cat{
+			from{height: 350px; 
+				width: 350px;
+				opacity: 1;}
+			to{width: 200px;
+				height:556px;
+				opacity: 0.2;}
+			}
+		@keyframes see{
+			from{opacity: 0;}
+			to{opacity: 1;}
+		}
+		@keyframes side{
+			from{left:-1000px; opacity: 0.3}
+			to{left:-350px; opacity: 1;}
+		}
+		@keyframes up1{
+			from{top: 250px; opacity: 0.3;}
+			to{top: 150px; opacity: 1;}
+		}
+		@keyframes up2{
+			from{top: 400px; opacity: 0.3;}
+			to{top: 300px; opacity: 1;}
+		}
+		@keyframes up3{
+			from{top: 250px; opacity: 0.3;}
+			to{top: 150px; opacity: 1;}
+		}
+		@keyframes up4{
+			from{top: 430px; opacity: 0.3;}
+			to{top: 330px; opacity: 1;}
+		}
+		@keyframes up5{
+			from{top: 250px; opacity: 0.3;}
+			to{top: 150px; opacity: 1;}
+		}
+		@keyframes up6{
+			from{top: 370px; opacity: 0.3;}
+			to{top: 270px; opacity: 1;}
+		}
+
+		
+
+
+		
+		
+		
+
+		
+
+		
+	</style>
+</head>
+<body>
+<section id="first">
+	<header>
+		<div class="wrap" id="back">
+			
+			<h1 id="t1">Black Cat Appreciation Day 
+			</h1>
+			<h2>August 17
+			 
+				<span class=yellow id="t2">
+				<br>“ The Beauty is more than fur deep ”
+				</span>
+			</h2>
+		</div>
+		
+		
+		
+	</header>
+	<section class="s1">
+		<div class="wrap">
+			<p id="t3">
+				미국에서 8월 17일은 <span class="bold">‘검은 고양이의 날’</span>
+				이다. 이 날은 과거 불순한 존재로만 여겨지던 ‘검은 고양이’에 대한 인식을 바꿔보고자 했던 동물보호단체의 생각이 계기가 
+				되어 지정된 기념일이다.
+			</p>
+			<img src="header22.png" id="img1">
+			<p class="te4" id="t4">
+				“ The Beauty is more than fur deep ”
+			</p>
+			<p class="te5" id="t5">진짜 아름다움은 털가죽 아래에 있다</p>	
+			<p style="top: 150px;right: -200px;" id="t6">	
+				이 날 동물단체는 검은 고양이의 입양 수수료를 대폭 
+				낮추는 등 <span class="bold">사람들의 인식 제고를 위한 홍보에 열을 올린다.</span>
+				또한 반려동물을 색으로 판단하지 말아달라고 호소한다.
+			</p>
+			<img src="ll.png" id="next">
+		</div>
+	</section>
+</section>
+<section id="second">
+	<section class="s2" id="se2">
+		<div class="wrap">
+			<h2 class="te6" id="t7">검은 고양이는 <br> 불행의 상징?</h2>
+			<img src="dd.gif">
+			<img src="dd.gif" style="right: 100px;">
+			<img src="dd.gif" style="right: 50px;">
+			
+		</div>
+	</section>
+	<section class="s3" id="se3">
+		<div class="wrap">
+			<h2 class="number"> 1</h2>
+			<h2 class="te7" id="t8"> 존경을 받는 <br> 검은 고양이</h2>
+			<img src="ba.png">
+			<p id="u1">
+				기원전 3000년 초기 이집트에서 고양이는 불운으로 생각되지 않았다. 당시에 검은 고양이는 존경을 받았으며 해충과 뱀이나 코브라 같은 위험한 동물을 죽일 수 있는 능력 때문에 칭찬을 받았다.
+			</p>
+			<p style="top: 300px; right: -70px;width: 420px;" id="u2">	
+				<span class="bold">당시 고양이를 죽이는 것은 사형에 처해질 정도의 중범죄로 간주되었다.</span> 일반적으로 고양이는 신의 헌신이라 여겨졌다. 고양이 얼굴을 한 <span class="bold">바스테드</span>는 보호와 출산, 모성을 위한 신이었다. 
+			<br><br>
+				<span class="bold">고양이는 매우 존경받았으며 고양이가 죽으면 사람과 같은 과정을 거쳐 미라로 만들기도 했다.</span>고양이는 종종 소유자와 함께 뭍히기도 했다. 마치 가족이 죽은 것처럼 고양이의 죽음을 슬퍼했다. 
+			</p>
+			
+		</div>
+	</section>
+
+	<section class="s4" id="se4">
+		<div class="wrap">
+			<img src="cat.gif" id="cat1">
+			<h2 class="number"> 2</h2>
+			<h2 class="te8" id="t9"> 검은 고양이 <br> 마녀</h2>
+			<p id="u3">
+				중세 시대는 가톨릭 교회가 아주 거대한 힘을 지니던 시기였고, 사회에 큰 반향을 일으키는 결정들을 내리는 곳이었다. 12세기 말, 프랑스에서는 “종교재판” 이라고 알려진 재판이 시작되었다. 종교재판이란 명목으로 많은 법정이 마녀와 이교도를 솎아내는 일을 맡았다.
+			</p>
+		
+			<p style="top: 330px; right: -100px;" id="u4">
+				독신의 신비한 여인들의 많은 수가 마녀라고 지명 수배되었다.그들의 운명은 화형이었다. 이런 식으로 검은 고양이들도 추적하기 시작했는데, 그 이유란 바로 <span class="bold">수상한 여자들이 요술을 부리고 저주를 걸기 위해 검은 고양이들을 이용했다</span>는 의심에서 나온 것이었다.
+				<br><br>
+				사실은 이러했다. 주거지에서 음식과 집을 찾아다니는 개와 달리 고양이는 소심하고 신중한 탓에 사람들에게서 몸을 숨겼던 것이다. <span class="bold">당시 사람들은 고양이들은 사실 동물의 형상으로 변신한 마녀들이라고 했다.</span> 그렇기 때문에 밤에는 잡히지 않으며 아무 문제 없이 요술을 부릴 것이라고 생각했다.
+			</p>
+		</div>
+	</section>
+		
+	<section class="s5" id="se5">
+		<div class="wrap">
+			<h2 class="number"> 3</h2>
+			<h2 class="te9" id="t10"> 흑사병 <br> 검은 고양이</h2>
+			<img src="tt.png" id="img2">
+				<p id="u5">
+					교황 그레고리오 9세는 검은 고양이들이 악마와 연관이 있다고 했다. 사람들은 검은 고양이들을 두려워하기 시작했고 자연히 검은 고양이들을 없애려고 했다. 
+				</p>
+				<p style="top: 270px; right: -50px; width: 400px;" id="u6">
+					<span class="bold">고양이의 개체 수가 눈에 띄도록 줄어들자, 쥐들의 번식이 급증하는 데는 오래 걸리지 않았다. 이와 함께 흑사병과 죽음이 뒤따랐다.</span> 흑사병 혹은 페스트라 불리는 이 병은 유럽에서 이천 오백만 명의 사람들을 삼 년 만에 전멸시켰다.
+					<br><br>
+					당시에는 병이 전염된 원인이 쥐의 기생충이라는 것을 알지 못했다. 사람들은 타고난 쥐 사냥꾼인 고양이들이 전염병과 관련 있다고 믿었다. 그렇게 고양이들을 죽이기 시작했고 1400년경에는 고양이들이 거의 보이지 않을 정도였다.
+					<span class="bold"> 사람들은 고양이가 적을수록 쥐가 많아지고 흑사병이 더 창궐한다는 것을 알지 못하였다.</span>
+				</p>
+		</div>
+	</section>
+	<footer>
+		<div class="wrap">
+		<p>2019&copy;Lee A Hyun
+			모든 저작권은 이아현에게 있습니다.
+		</p>
+		</div>
+	</footer>
+</section>
+	
+
+	<div id="monitor"></div>
+
+	<script type="text/javascript">
+		window.onscroll = function(){
+		var t = document.documentElement.scrollTop + document.body.scrollTop;
+			monitor.innerHTML = t.toFixed(1);
+			if (90 < t) { back.style.background = "black";}
+			else{back.style.background = "";}
+			if (90 < t) { t1.style.color = "white";}
+			else{t1.style.color = "";}
+			if (90 < t) { t2.style.color = "black";}
+			else{t2.style.color = "";}
+			if (90 < t) { t3.style.animation = "see 3s forwards";}
+			else{t3.style.animation = "";}
+			if (90 < t) { t6.style.animation = "see 3s forwards";}
+			else{t6.style.animation = "";}
+			if (90 < t) { t4.style.animation = "side 3s forwards";}
+			else{t4.style.animation = "";}
+			if (90 < t) { t5.style.animation = "see 3s forwards";}
+			else{t5.style.animation = "";}
+			if (150 < t) { img1.style.opacity = "0.8";}
+			else{img1.style.opacity = "";}
+			if (450 < t) { img1.style.animation = "wid 3s forwards";}
+			else{img1.style.animation = "";}
+			
+
+			if (900 < t) { cat1.style.animation = "cat 3s infinite";}
+			else{cat1.style.animation = "";}
+			if (1800 < t) { img2.style.animation = "see 3s forwards";}
+			else{img2.style.animation = "";}
+			if (100 < t) { t8.style.animation = "see 3s forwards";}
+			else{t8.style.animation = "";}
+			if (600 < t) { t9.style.animation = "see 3s forwards";}
+			else{t9.style.animation = "";}
+			if (1400 < t) { t10.style.animation = "see 3s forwards";}
+			else{t10.style.animation = "";}
+			if (90 < t) { u1.style.animation = "up1 3s forwards";}
+			else{u1.style.animation = "";}
+			if (100 < t) { u2.style.animation = "up2 3s forwards";}
+			else{u2.style.animation = "";}
+			if (700 < t) { u3.style.animation = "up3 3s forwards";}
+			else{u3.style.animation = "";}
+			if (750 < t) { u4.style.animation = "up4 3s forwards";}
+			else{u4.style.animation = "";}
+			if (1450< t) { u5.style.animation = "up5 3s forwards";}
+			else{u5.style.animation = "";}
+			if (1500 < t) { u6.style.animation = "up6 3s forwards";}
+			else{u6.style.animation = "";}
+
+
+			
+
+		}
+		next.onclick = function(){
+			first.style.opacity = "0";
+			se2.style.opacity = "1";
+			se3.style.opacity = "1";
+			se4.style.opacity = "1";
+			se5.style.opacity = "1";
+		}
+		 
+	</script>
+
+</body>
+</html>
